@@ -1,6 +1,6 @@
 {
-  "name": "react-webpack-bootstrap-heroku-boilerplate",
-  "description": "React Webpack Bootstrap Heroku Boilerplate",
+  "name": "footypredictor",
+  "description": "Footy Predictor App",
   "version": "0.0.1",
   "main": "app/App.js",
   "engines": {
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xcarpentier/react-webpack-bootstrap-heroku-boilerplate"
+    "url": "https://github.com/Prash88/footypredict"
   },
   "bugs": {
-    "url": "https://github.com/xcarpentier/react-webpack-bootstrap-heroku-boilerplate/issues"
+    "url": "https://github.com/Prash88/footypredict/issues"
   },
-  "homepage": "https://github.com/xcarpentier/react-webpack-bootstrap-heroku-boilerplate",
-  "author": "Xavier Carpentier <xcapetir@gmail.com> (http://xaviercarpentier.com)",
+  "homepage": "https://github.com/Prash88/footypredict",
+  "author": "Prashanth Sampath Kumar <prash88@iastate.edu>",
   "dependencies": {
     "babel": "^5.8.23",
     "babel-core": "^5.8.25",

@@ -5,7 +5,7 @@ class Home extends React.Component{
     return (
       <div>
         <h2 className="text-center">
-        React Webpack Bootstrap Heroku Boilerplate
+          This is my homepage
         </h2>
         <div className="well well-sm">Small Well</div>
       </div>

@@ -1,4 +1,4 @@
-# React Webpack Bootstrap Heroku Boilerplate
+# Sample hackathon app to predict football score weekly
 
 ### Stack
 
@@ -17,16 +17,3 @@ npm run build
 ```
 npm run dev
 ```
-
-### Heroku
-```
-heroku create
-heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi
-git push heroku master
-```
-
-### Inspirations
-
-* https://github.com/tylermcginnis/github-notetaker-egghead
-* https://github.com/alicoding/react-webpack-babel
-

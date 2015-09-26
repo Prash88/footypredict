@@ -17,3 +17,6 @@ npm run build
 ```
 npm run dev
 ```
+### Heroku URL
+```
+http://footypredict.herokuapp.com/#/

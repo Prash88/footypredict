@@ -7,6 +7,7 @@
 * Webpack
 * iojs
 * heroku-buildpack-webpack
+```
 
 ### Build
 ```
@@ -17,12 +18,15 @@ npm run build
 ```
 npm run dev
 ```
+
 ### Heroku URL
 ```
 http://footypredict.herokuapp.com/#/
+```
 
 ### Heroku initial push commands
 ```
 heroku create
 heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi
 git push heroku master
+```

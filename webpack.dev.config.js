@@ -26,7 +26,7 @@ module.exports = {
             test: /\.woff(2)?$/,
             loader: "url-loader"
         }, {
-            test: /\.(ttf|eot|svg)?$/,
+            test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
             loader: "file-loader"
         }]
     },

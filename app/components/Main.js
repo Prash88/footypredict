@@ -7,9 +7,9 @@ class Main extends React.Component{
     return (
       <div className="main-container">
         <nav className="navbar navbar-default" role="navigation">
-          <div className="col-sm-7 col-sm-offset-2" style={{marginTop: 15}}>
+          <h2 className="text-center">
             Welcome to FootyPredict
-          </div>
+          </h2>
         </nav>
         <div className="container">
           <RouteHandler {...this.props}/>

@@ -1,13 +1,12 @@
-import React from 'react';
-import Firebase from 'firebase';
+var React = require('react');
+var Firebase = require('firebase');
+var Login = React.createClass({
 
-class Login extends React.Component{
+  componentWillMount:function() {
 
-  componentWillMount() {
-
-  }
-
-  handleFacebookLogin() {
+  },
+  
+  handleFacebookLogin:function() {
     var ref = new Firebase("https://footypredict.firebaseio.com");
     ref.authWithOAuthPopup("facebook", function(error, authData) {
       if (error) {
@@ -22,9 +21,9 @@ class Login extends React.Component{
         });
       }
     });
-  }
+  },
 
-  handleTwitterLogin() {
+  handleTwitterLogin:function() {
     var ref = new Firebase("https://footypredict.firebaseio.com");
     ref.authWithOAuthPopup("twitter", function(error, authData) {
       if (error) {
@@ -39,9 +38,9 @@ class Login extends React.Component{
         });
       }
     });
-  }
+  },
 
-  render(){
+  render:function(){
     return (
       <div>
         <br/>
@@ -55,7 +54,8 @@ class Login extends React.Component{
         </a>
       </div>
     )
-  }
-};
+  },
+
+});
 
 export default Login;

@@ -1,16 +1,27 @@
-import React from 'react';
+var React = require('react');
 
-class Home extends React.Component{
-  render(){
+var Home = React.createClass({
+
+  propTypes: {
+    user: React.PropTypes.string,
+  },
+
+  getDefaultProps: function() {
+    return {
+      //user: 'default value'
+    };
+  },
+
+  render: function(){
     return (
       <div>
         <h2 className="text-center">
-          This is my homepage
+          You are logged in.
         </h2>
-        <div className="well well-sm">Small Well</div>
       </div>
-    )
-  }
-};
+    );
+  },
+
+});
 
 export default Home;

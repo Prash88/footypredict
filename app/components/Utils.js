@@ -11,7 +11,10 @@ isLoggedIn:function() {
   var authData = ref.getAuth();
 
   if (authData) {
-    localStorage.currentUser = authData.facebook.displayName;
+    if(authData.provider === 'facebook')
+      localStorage.currentUser = authData.facebook.displayName;
+    if(authData.provider === 'twitter')
+      localStorage.currentUser = authData.twitter.displayName;
     return true;
   }
   else {

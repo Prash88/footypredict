@@ -1,6 +1,10 @@
 var React = require('react');
 import { Navigation, RouteHandler } from 'react-router';
+import Utils from './Utils';
+
 var Home = React.createClass({
+
+  mixins: [ Navigation ],
 
   propTypes: {
     user: React.PropTypes.string,
@@ -12,11 +16,16 @@ var Home = React.createClass({
     };
   },
 
+  componentWillMount:function() {
+    if(!Utils.isLoggedIn())
+      this.replaceWith('/login');
+  },
+
   render: function(){
     return (
       <div>
         <h2 className="text-center">
-          You are logged in.
+          Welcome {Utils.getCurrentUser()}
         </h2>
       </div>
     );

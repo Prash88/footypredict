@@ -5,7 +5,7 @@ var Login = React.createClass({
   componentWillMount:function() {
 
   },
-  
+
   handleFacebookLogin:function() {
     var ref = new Firebase("https://footypredict.firebaseio.com");
     ref.authWithOAuthPopup("facebook", function(error, authData) {
@@ -44,12 +44,12 @@ var Login = React.createClass({
     return (
       <div>
         <br/>
-        <a className="btn btn-block btn-social btn-facebook" onClick={this.handleFacebookLogin}>
+        <a className="btn btn-large btn-social btn-facebook" onClick={this.handleFacebookLogin}>
           <i className="fa fa-facebook"></i> Sign in with Facebook
         </a>
         <br/>
         <br/>
-        <a className="btn btn-block btn-social btn-twitter" onClick={this.handleTwitterLogin}>
+        <a className="btn btn-large btn-social btn-twitter" onClick={this.handleTwitterLogin}>
           <i className="fa fa-twitter"></i> Sign in with Twitter
         </a>
       </div>

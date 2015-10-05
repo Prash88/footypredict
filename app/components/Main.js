@@ -2,6 +2,7 @@ import { Navigation, RouteHandler } from 'react-router';
 import theme from '../styles/index.less';
 var React = require('react');
 var Firebase = require('firebase');
+import Utils from './Utils';
 
 var Main = React.createClass({
 
@@ -43,13 +44,27 @@ var Main = React.createClass({
     }
   },
 
+  handleLogOut:function() {
+    var ref = new Firebase("https://footypredict.firebaseio.com");
+    ref.unauth();
+  },
+
   render:function(){
+    var logoutDom = (Utils.isLoggedIn())?
+    <div>
+      <ul className="nav navbar-nav navbar-right">
+        <li><a onClick={this.handleLogOut}><span className="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>:<div></div>;
     return (
       <div className="main-container">
-        <nav className="navbar navbar-default" role="navigation">
-          <h2 className="text-center">
-            Welcome to FootyPredict
-          </h2>
+        <nav className="navbar navbar-inverse">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <a className="navbar-brand">FootyPredict</a>
+            </div>
+            {logoutDom}
+          </div>
         </nav>
         <div className="container">
           <RouteHandler {...this.props}/>

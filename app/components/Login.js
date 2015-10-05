@@ -1,9 +1,12 @@
 var React = require('react');
 var Firebase = require('firebase');
+import Utils from './Utils';
+
 var Login = React.createClass({
 
   componentWillMount:function() {
-
+    if(Utils.isLoggedIn())
+      this.replaceWith('/home');
   },
 
   handleFacebookLogin:function() {

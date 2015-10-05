@@ -22,11 +22,11 @@ var Main = React.createClass({
   onAuthHandler:function(authData) {
     if (authData) {
       this.setState({loggedIn:true});
-      this.transitionTo('/home');
+      this.replaceWith('/home');
       //alert("Authenticated with uid:"+authData.displayName);
     } else {
       this.setState({loggedIn:false});
-      this.transitionTo('/');
+      this.replaceWith('/login');
       //alert("Client unauthenticated.")
     }
   },
@@ -34,11 +34,11 @@ var Main = React.createClass({
   offAuthHandler:function(authData) {
     if (authData) {
       this.setState({loggedIn:true});
-      this.transitionTo('/home');
+      this.replaceWith('/home');
       //alert("Authenticated with uid:"+authData.provider);
     } else {
       this.setState({loggedIn:false});
-      this.transitionTo('/');
+      this.replaceWith('/login');
       //alert("Client unauthenticated.")
     }
   },

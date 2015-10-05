@@ -10,7 +10,7 @@ import {Navigation} from 'react-router';
 
 export default (
   <Route name="app" path="/" handler={Main}>
-    <DefaultRoute handler={LoginHandler} />
-    <Route name="home" path="/home" handler={Home} />
+    <Route name="login" handler={LoginHandler} />
+    <Route name="home" handler={Home} />
   </Route>
 );

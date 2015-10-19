@@ -1,4 +1,4 @@
-# A hackathon app to predict football score by users
+# A simple app to chat about football by users
 
 ### Stack
 ```

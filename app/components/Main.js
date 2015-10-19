@@ -61,7 +61,7 @@ var Main = React.createClass({
         <nav className="navbar navbar-inverse">
           <div className="container-fluid">
             <div className="navbar-header">
-              <a className="navbar-brand">FootyPredict</a>
+              <a className="navbar-brand">FootyChat</a>
             </div>
             {logoutDom}
           </div>
